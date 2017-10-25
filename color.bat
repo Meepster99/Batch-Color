@@ -21,9 +21,12 @@ echo " ~ # % & * ( ) { } \ : < > ? / + |
 echo for a list of color codes, type color /?
 goto :eof
 :main
-set "DEL= " rem these 2 characters are backspaces, with a single space in between them.
-<nul set /p ".=%DEL%" > "%~2" rem makes a file named "message.txt" containing a backspace, space, and another backspace
-findstr /v /a:%1 /R "^$" "%~2" nul rem findstr is the only capable command of outputing only one color. 
+set "DEL= " 
+rem these 2 characters are backspaces, with a single space in between them.
+<nul set /p ".=%DEL%" > "%~2" 
+findstr /v /a:%1 /R "^$" "%~2" nul 
+rem makes a file named "message.txt" containing a backspace, space, and another backspace
+rem findstr is the only capable command of outputing only one color. 
 rem the /a:%1 does this. Then what this does is
 rem takes the file made in the previous command. /v prints only lines that dont contain a match.
 rem /R is for regular expressions, and "^" targets the start of the line, and "$" targets the end
