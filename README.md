@@ -1,5 +1,5 @@
 # Batch-Color
-A batch program to color individual letters, using pure batch.
+## A batch program to color individual letters, using pure batch.
 
 What it does, and how it works:
 How to use.
@@ -45,4 +45,4 @@ nul.  then all ls set.
 
 del "%~2" > nul
 
-rem the above file just deletes the "message.txt" file we made.
+the above file just deletes the "message.txt" file we made.
