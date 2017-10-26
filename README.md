@@ -1,8 +1,9 @@
 # Batch-Color
 ## A batch program to color individual letters, using pure batch.
 
-What it does, and how it works:
-How to use.
+What it does, and how it works
+
+How to use
 call color.bat [hexidecimal color code] "Message"
 sample usage: call color.bat 0b "im feeling blue" && echo(
 color.bat 0b "im feeling blue" && echo(
