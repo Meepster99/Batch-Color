@@ -69,6 +69,8 @@ del "%~2" > nul
 
 the above file just deletes the "message.txt" file we made.
 
+the > nul makes sure that nothing is outputed on the screen
+
 goto :eof
 
 goes to the end of the file
