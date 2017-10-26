@@ -5,7 +5,7 @@ What it does, and how it works
 
 Usage:
 
-call color.bat [hexidecimal color code] "Message"
+call color.bat hexidecimal color code "Message"
 sample usage: call color.bat 0b "im feeling blue" && echo(
 color.bat 0b "im feeling blue" && echo(
 
