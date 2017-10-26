@@ -17,11 +17,13 @@ for a list of color codes, type color /?
 
 set "DEL= " 
 
-rem these 2 characters are backspaces, with a single space in between them.
+these 2 characters are backspaces, with a single space in between them.
 
 <nul set /p ".=%DEL%" > "%~2" 
 
-rem makes a file named "message.txt" containing a backspace, space, and another backspace
+makes a file named "message.txt" containing a backspace, space, and another backspace
+the <nul is there, since that makes it able to accept spaces in the variable, but then it also accepts things like %DEL%
+echo %DEL% > "%~2" would not work
 
 findstr /v /a:%1 /R "^$" "%~2" nul 
 
